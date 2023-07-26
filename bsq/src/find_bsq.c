@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   find_bsq.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aautin <aautin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yahan <yahanhsiao@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 11:41:57 by yhsiao            #+#    #+#             */
-/*   Updated: 2023/07/19 15:32:34 by aautin           ###   ########.fr       */
+/*   Updated: 2023/07/26 21:39:04 by yahan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	**find_bsq(int **area, t_map *map)
 	sol_area = create_empty_array(*map);
 	map->bsq_row = 0;
 	map->bsq_col = 0;
-	map->bsq_size = sol_area[map->bsq_row][map->bsq_col];
+	map->bsq_size = 0;
 	i = -1;
 	while (++i < map->row_nb)
 	{
@@ -50,7 +50,7 @@ int	**find_bsq(int **area, t_map *map)
 		while (++j < map->col_nb)
 		{
 			sol_area[i][j] = sq_calc(area, sol_area, i, j);
-			if (sol_area[i][j] > sol_area[map->bsq_row][map->bsq_col])
+			if (sol_area[i][j] > map->bsq_size)
 			{
 				map->bsq_row = i;
 				map->bsq_col = j;

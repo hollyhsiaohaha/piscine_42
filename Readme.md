@@ -1,6 +1,6 @@
 # Piscine in 42 Paris (2023 July)
 
-This repository contains my solutions to the Piscine program at 42 Paris. The modules marked in NA mean unregistered modules.
+This repository contains my solutions to the Piscine program at 42 Paris. The modules marked in NA means unregistered.
 
 ## About Piscine
 

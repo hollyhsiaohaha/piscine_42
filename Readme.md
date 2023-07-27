@@ -9,7 +9,7 @@ The Piscine is a 4-week intensive program at 42 Paris. It is a selection process
 
 ## Scores
 
-Level: 8.83
+Level: 9.43
 
 | Module | Score  |
 | :----------------:| :----------:|

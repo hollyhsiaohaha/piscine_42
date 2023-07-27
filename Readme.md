@@ -41,4 +41,3 @@ Level: 9.43
 ## Usage
 
 To run any of the code in this repository, you will need to have the appropriate development environment set up on your machine. Please refer to the official documentation for each language or tool for more information on how to do this.
-
